@@ -78,31 +78,11 @@ data = dataFrame.values
 X = data[:, 1:-1].astype(float)
 
 K = 3
-iteration = 10
-
-
-
-
 
 costs = []
 iters = []
 best_cost = 9999
 
-# for i in range(101):
-#     init_centroids = initialize_centroids(X, K, i)
-#
-#     print("Random Initialization [ " + str(i) + " ]" )
-#     centroids, cost = K_means(X, init_centroids,iteration)
-#     costs.append(cost)
-#     iters.append(iter)
-#     if cost < best_cost:
-#         best_cost = cost
-#     print()
-#
-#
-# print("Best Random initialization Cost : " + str(best_cost))
-
-# Elbow를 찾기 위한 Plotting을 할 때
 best_cost = list()
 best_centroid = list()
 
